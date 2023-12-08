@@ -7,7 +7,9 @@ public class ListingActivity
     private string[] listingPrompts = {
         "Who are people that you appreciate?",
         "What are personal strengths of yours?",
-        // More listing prompts...
+        "Who are people that you have helped this week?",
+        "When have you felt the Holy Ghost this month?",
+        "Who are some of your personal heroes?"
     };
 
     public ListingActivity(int durationInSeconds)
@@ -70,7 +72,7 @@ public class ListingActivity
         while ((DateTime.Now - startTime).TotalSeconds < durationInSeconds)
         {
             string input = Console.ReadLine();
-            if (string.IsNullOrWhiteSpace(input)) // Check for empty or whitespace input to exit
+            if (string.IsNullOrWhiteSpace(input)) 
                 break;
             itemCount++;
         }

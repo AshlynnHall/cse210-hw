@@ -46,7 +46,7 @@ public class ReflectionActivity
 
         Random rand = new Random();
 
-        Console.Clear(); // Clear the initial message
+        Console.Clear(); 
         int index = rand.Next(prompts.Length);
         Console.WriteLine(prompts[index]);
 
@@ -57,7 +57,7 @@ public class ReflectionActivity
         {
             Console.WriteLine(reflectionQuestions[questionIndex]);
             SpinSpinner();
-            Thread.Sleep(10000); // Display each question for 10 seconds
+            Thread.Sleep(10000);
             questionIndex++;
         }
 
